@@ -1,0 +1,691 @@
+21/01/12 10:55:41 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 5, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:41 INFO Executor: Running task 0.0 in stage 5.0 (TID 5)
+21/01/12 10:55:41 INFO BlockManager: Found block rdd_11_0 locally
+21/01/12 10:55:42 INFO PythonRunner: Times: total = 63, boot = -76, init = 83, finish = 56
+21/01/12 10:55:42 INFO Executor: Finished task 0.0 in stage 5.0 (TID 5). 1505 bytes result sent to driver
+21/01/12 10:55:42 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 5) in 92 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:42 INFO DAGScheduler: ResultStage 5 (count at /home/linuxlite/Desktop/not_efficient.py:35) finished in 0.116 s
+21/01/12 10:55:42 INFO DAGScheduler: Job 5 finished: count at /home/linuxlite/Desktop/not_efficient.py:35, took 0.135348 s
+21/01/12 10:55:42 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+21/01/12 10:55:42 INFO SparkContext: Starting job: sum at /home/linuxlite/Desktop/not_efficient.py:36
+21/01/12 10:55:42 INFO DAGScheduler: Got job 6 (sum at /home/linuxlite/Desktop/not_efficient.py:36) with 1 output partitions
+21/01/12 10:55:42 INFO DAGScheduler: Final stage: ResultStage 6 (sum at /home/linuxlite/Desktop/not_efficient.py:36)
+21/01/12 10:55:42 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:42 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:42 INFO DAGScheduler: Submitting ResultStage 6 (PythonRDD[15] at sum at /home/linuxlite/Desktop/not_efficient.py:36), which has no missing parents
+21/01/12 10:55:42 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 20.0 KB, free 363.1 MB)
+21/01/12 10:55:42 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 9.9 KB, free 363.0 MB)
+21/01/12 10:55:42 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 363.4 MB)
+21/01/12 10:55:42 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (PythonRDD[15] at sum at /home/linuxlite/Desktop/not_efficient.py:36) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:42 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks
+21/01/12 10:55:42 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 6, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:42 INFO Executor: Running task 0.0 in stage 6.0 (TID 6)
+21/01/12 10:55:42 INFO BlockManager: Found block rdd_10_0 locally
+21/01/12 10:55:42 INFO PythonRunner: Times: total = 58, boot = -87, init = 101, finish = 44
+21/01/12 10:55:42 INFO MemoryStore: Block rdd_12_0 stored as values in memory (estimated size 114.7 KB, free 362.9 MB)
+21/01/12 10:55:42 INFO BlockManagerInfo: Added rdd_12_0 in memory on 192.168.43.9:33803 (size: 114.7 KB, free: 363.3 MB)
+21/01/12 10:55:42 INFO PythonRunner: Times: total = 22, boot = 3, init = 9, finish = 10
+21/01/12 10:55:42 INFO Executor: Finished task 0.0 in stage 6.0 (TID 6). 1507 bytes result sent to driver
+21/01/12 10:55:42 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 6) in 144 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:42 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+21/01/12 10:55:42 INFO DAGScheduler: ResultStage 6 (sum at /home/linuxlite/Desktop/not_efficient.py:36) finished in 0.163 s
+21/01/12 10:55:42 INFO DAGScheduler: Job 6 finished: sum at /home/linuxlite/Desktop/not_efficient.py:36, took 0.177770 s
+21/01/12 10:55:42 INFO SparkContext: Starting job: count at /home/linuxlite/Desktop/not_efficient.py:36
+21/01/12 10:55:42 INFO DAGScheduler: Got job 7 (count at /home/linuxlite/Desktop/not_efficient.py:36) with 1 output partitions
+21/01/12 10:55:42 INFO DAGScheduler: Final stage: ResultStage 7 (count at /home/linuxlite/Desktop/not_efficient.py:36)
+21/01/12 10:55:42 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:42 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:42 INFO DAGScheduler: Submitting ResultStage 7 (PythonRDD[16] at count at /home/linuxlite/Desktop/not_efficient.py:36), which has no missing parents
+21/01/12 10:55:42 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 19.9 KB, free 362.9 MB)
+21/01/12 10:55:42 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 9.9 KB, free 362.9 MB)
+21/01/12 10:55:42 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 363.3 MB)
+21/01/12 10:55:42 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 7 (PythonRDD[16] at count at /home/linuxlite/Desktop/not_efficient.py:36) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:42 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks
+21/01/12 10:55:42 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 7, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:42 INFO Executor: Running task 0.0 in stage 7.0 (TID 7)
+21/01/12 10:55:42 INFO BlockManager: Found block rdd_12_0 locally
+21/01/12 10:55:42 INFO PythonRunner: Times: total = 14, boot = -92, init = 98, finish = 8
+21/01/12 10:55:42 INFO Executor: Finished task 0.0 in stage 7.0 (TID 7). 1505 bytes result sent to driver
+21/01/12 10:55:42 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 7) in 38 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:42 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+21/01/12 10:55:42 INFO DAGScheduler: ResultStage 7 (count at /home/linuxlite/Desktop/not_efficient.py:36) finished in 0.062 s
+21/01/12 10:55:42 INFO DAGScheduler: Job 7 finished: count at /home/linuxlite/Desktop/not_efficient.py:36, took 0.086874 s
+View average bigger than 4 of Sports 8527.934249850568
+View average less than 4 of Sports 3571.4250764525996
+21/01/12 10:55:42 INFO SparkContext: Starting job: sum at /home/linuxlite/Desktop/not_efficient.py:43
+21/01/12 10:55:42 INFO DAGScheduler: Got job 8 (sum at /home/linuxlite/Desktop/not_efficient.py:43) with 1 output partitions
+21/01/12 10:55:42 INFO DAGScheduler: Final stage: ResultStage 8 (sum at /home/linuxlite/Desktop/not_efficient.py:43)
+21/01/12 10:55:42 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:42 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:42 INFO DAGScheduler: Submitting ResultStage 8 (PythonRDD[20] at sum at /home/linuxlite/Desktop/not_efficient.py:43), which has no missing parents
+21/01/12 10:55:42 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 20.0 KB, free 362.9 MB)
+21/01/12 10:55:42 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 9.9 KB, free 362.9 MB)
+21/01/12 10:55:42 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 363.3 MB)
+21/01/12 10:55:42 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:42 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (PythonRDD[20] at sum at /home/linuxlite/Desktop/not_efficient.py:43) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:42 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks
+21/01/12 10:55:42 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 8, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:42 INFO Executor: Running task 0.0 in stage 8.0 (TID 8)
+21/01/12 10:55:42 INFO BlockManager: Found block rdd_2_0 locally
+21/01/12 10:55:42 INFO PythonRunner: Times: total = 201, boot = -181, init = 189, finish = 193
+21/01/12 10:55:42 INFO MemoryStore: Block rdd_17_0 stored as values in memory (estimated size 109.8 KB, free 362.8 MB)
+21/01/12 10:55:42 INFO BlockManagerInfo: Added rdd_17_0 in memory on 192.168.43.9:33803 (size: 109.8 KB, free: 363.2 MB)
+21/01/12 10:55:42 INFO PythonRunner: Times: total = 53, boot = 24, init = 0, finish = 29
+21/01/12 10:55:42 INFO MemoryStore: Block rdd_18_0 stored as values in memory (estimated size 83.4 KB, free 362.7 MB)
+21/01/12 10:55:42 INFO BlockManagerInfo: Added rdd_18_0 in memory on 192.168.43.9:33803 (size: 83.4 KB, free: 363.1 MB)
+21/01/12 10:55:42 INFO PythonRunner: Times: total = 41, boot = 34, init = 0, finish = 7
+21/01/12 10:55:43 INFO Executor: Finished task 0.0 in stage 8.0 (TID 8). 1507 bytes result sent to driver
+21/01/12 10:55:43 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 8) in 381 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:43 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+21/01/12 10:55:43 INFO DAGScheduler: ResultStage 8 (sum at /home/linuxlite/Desktop/not_efficient.py:43) finished in 0.408 s
+21/01/12 10:55:43 INFO DAGScheduler: Job 8 finished: sum at /home/linuxlite/Desktop/not_efficient.py:43, took 0.422042 s
+21/01/12 10:55:43 INFO SparkContext: Starting job: count at /home/linuxlite/Desktop/not_efficient.py:43
+21/01/12 10:55:43 INFO DAGScheduler: Got job 9 (count at /home/linuxlite/Desktop/not_efficient.py:43) with 1 output partitions
+21/01/12 10:55:43 INFO DAGScheduler: Final stage: ResultStage 9 (count at /home/linuxlite/Desktop/not_efficient.py:43)
+21/01/12 10:55:43 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:43 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:43 INFO DAGScheduler: Submitting ResultStage 9 (PythonRDD[21] at count at /home/linuxlite/Desktop/not_efficient.py:43), which has no missing parents
+21/01/12 10:55:43 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 19.9 KB, free 362.7 MB)
+21/01/12 10:55:43 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 9.9 KB, free 362.7 MB)
+21/01/12 10:55:43 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 363.1 MB)
+21/01/12 10:55:43 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (PythonRDD[21] at count at /home/linuxlite/Desktop/not_efficient.py:43) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:43 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks
+21/01/12 10:55:43 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 9, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:43 INFO Executor: Running task 0.0 in stage 9.0 (TID 9)
+21/01/12 10:55:43 INFO BlockManager: Found block rdd_18_0 locally
+21/01/12 10:55:43 INFO PythonRunner: Times: total = 57, boot = -94, init = 101, finish = 50
+21/01/12 10:55:43 INFO Executor: Finished task 0.0 in stage 9.0 (TID 9). 1548 bytes result sent to driver
+21/01/12 10:55:43 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 9) in 96 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:43 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+21/01/12 10:55:43 INFO DAGScheduler: ResultStage 9 (count at /home/linuxlite/Desktop/not_efficient.py:43) finished in 0.123 s
+21/01/12 10:55:43 INFO DAGScheduler: Job 9 finished: count at /home/linuxlite/Desktop/not_efficient.py:43, took 0.138590 s
+21/01/12 10:55:43 INFO SparkContext: Starting job: sum at /home/linuxlite/Desktop/not_efficient.py:44
+21/01/12 10:55:43 INFO DAGScheduler: Got job 10 (sum at /home/linuxlite/Desktop/not_efficient.py:44) with 1 output partitions
+21/01/12 10:55:43 INFO DAGScheduler: Final stage: ResultStage 10 (sum at /home/linuxlite/Desktop/not_efficient.py:44)
+21/01/12 10:55:43 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:43 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:43 INFO DAGScheduler: Submitting ResultStage 10 (PythonRDD[22] at sum at /home/linuxlite/Desktop/not_efficient.py:44), which has no missing parents
+21/01/12 10:55:43 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 20.0 KB, free 362.6 MB)
+21/01/12 10:55:43 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 9.9 KB, free 362.6 MB)
+21/01/12 10:55:43 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 363.1 MB)
+21/01/12 10:55:43 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 10 (PythonRDD[22] at sum at /home/linuxlite/Desktop/not_efficient.py:44) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:43 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks
+21/01/12 10:55:43 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 10, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:43 INFO Executor: Running task 0.0 in stage 10.0 (TID 10)
+21/01/12 10:55:43 INFO BlockManager: Found block rdd_17_0 locally
+21/01/12 10:55:43 INFO PythonRunner: Times: total = 33, boot = -122, init = 126, finish = 29
+21/01/12 10:55:43 INFO MemoryStore: Block rdd_19_0 stored as values in memory (estimated size 24.4 KB, free 362.6 MB)
+21/01/12 10:55:43 INFO BlockManagerInfo: Added rdd_19_0 in memory on 192.168.43.9:33803 (size: 24.4 KB, free: 363.1 MB)
+21/01/12 10:55:43 INFO PythonRunner: Times: total = 61, boot = 32, init = 26, finish = 3
+21/01/12 10:55:43 INFO Executor: Finished task 0.0 in stage 10.0 (TID 10). 1507 bytes result sent to driver
+21/01/12 10:55:43 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 10) in 166 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:43 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+21/01/12 10:55:43 INFO DAGScheduler: ResultStage 10 (sum at /home/linuxlite/Desktop/not_efficient.py:44) finished in 0.204 s
+21/01/12 10:55:43 INFO DAGScheduler: Job 10 finished: sum at /home/linuxlite/Desktop/not_efficient.py:44, took 0.219547 s
+21/01/12 10:55:43 INFO SparkContext: Starting job: count at /home/linuxlite/Desktop/not_efficient.py:44
+21/01/12 10:55:43 INFO DAGScheduler: Got job 11 (count at /home/linuxlite/Desktop/not_efficient.py:44) with 1 output partitions
+21/01/12 10:55:43 INFO DAGScheduler: Final stage: ResultStage 11 (count at /home/linuxlite/Desktop/not_efficient.py:44)
+21/01/12 10:55:43 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:43 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:43 INFO DAGScheduler: Submitting ResultStage 11 (PythonRDD[23] at count at /home/linuxlite/Desktop/not_efficient.py:44), which has no missing parents
+21/01/12 10:55:43 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 19.9 KB, free 362.6 MB)
+21/01/12 10:55:43 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 9.9 KB, free 362.6 MB)
+21/01/12 10:55:43 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 363.0 MB)
+21/01/12 10:55:43 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (PythonRDD[23] at count at /home/linuxlite/Desktop/not_efficient.py:44) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:43 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks
+21/01/12 10:55:43 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 11, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:43 INFO Executor: Running task 0.0 in stage 11.0 (TID 11)
+21/01/12 10:55:43 INFO BlockManager: Found block rdd_19_0 locally
+21/01/12 10:55:43 INFO PythonRunner: Times: total = 46, boot = -66, init = 111, finish = 1
+21/01/12 10:55:43 INFO Executor: Finished task 0.0 in stage 11.0 (TID 11). 1505 bytes result sent to driver
+21/01/12 10:55:43 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 11) in 76 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:43 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+21/01/12 10:55:43 INFO DAGScheduler: ResultStage 11 (count at /home/linuxlite/Desktop/not_efficient.py:44) finished in 0.108 s
+21/01/12 10:55:43 INFO DAGScheduler: Job 11 finished: count at /home/linuxlite/Desktop/not_efficient.py:44, took 0.120999 s
+View average bigger than 4 of Film & Animation 9105.08206958073
+View average less than 4 of Film & Animation 2417.406779661017
+21/01/12 10:55:43 INFO SparkContext: Starting job: sum at /home/linuxlite/Desktop/not_efficient.py:51
+21/01/12 10:55:43 INFO DAGScheduler: Got job 12 (sum at /home/linuxlite/Desktop/not_efficient.py:51) with 1 output partitions
+21/01/12 10:55:43 INFO DAGScheduler: Final stage: ResultStage 12 (sum at /home/linuxlite/Desktop/not_efficient.py:51)
+21/01/12 10:55:43 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:43 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:43 INFO DAGScheduler: Submitting ResultStage 12 (PythonRDD[27] at sum at /home/linuxlite/Desktop/not_efficient.py:51), which has no missing parents
+21/01/12 10:55:43 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 20.0 KB, free 362.6 MB)
+21/01/12 10:55:43 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 9.9 KB, free 362.6 MB)
+21/01/12 10:55:43 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 363.0 MB)
+21/01/12 10:55:43 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (PythonRDD[27] at sum at /home/linuxlite/Desktop/not_efficient.py:51) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:43 INFO TaskSchedulerImpl: Adding task set 12.0 with 1 tasks
+21/01/12 10:55:43 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 12, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:43 INFO Executor: Running task 0.0 in stage 12.0 (TID 12)
+21/01/12 10:55:43 INFO BlockManager: Found block rdd_2_0 locally
+21/01/12 10:55:44 INFO PythonRunner: Times: total = 226, boot = -183, init = 197, finish = 212
+21/01/12 10:55:44 INFO MemoryStore: Block rdd_24_0 stored as values in memory (estimated size 387.2 KB, free 362.2 MB)
+21/01/12 10:55:44 INFO BlockManagerInfo: Added rdd_24_0 in memory on 192.168.43.9:33803 (size: 387.2 KB, free: 362.7 MB)
+21/01/12 10:55:44 INFO PythonRunner: Times: total = 75, boot = -6, init = 15, finish = 66
+21/01/12 10:55:44 INFO MemoryStore: Block rdd_25_0 stored as values in memory (estimated size 293.0 KB, free 361.9 MB)
+21/01/12 10:55:44 INFO BlockManagerInfo: Added rdd_25_0 in memory on 192.168.43.9:33803 (size: 293.0 KB, free: 362.4 MB)
+21/01/12 10:55:44 INFO PythonRunner: Times: total = 32, boot = -37, init = 41, finish = 28
+21/01/12 10:55:44 INFO Executor: Finished task 0.0 in stage 12.0 (TID 12). 1507 bytes result sent to driver
+21/01/12 10:55:44 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 12) in 450 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:44 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+21/01/12 10:55:44 INFO DAGScheduler: ResultStage 12 (sum at /home/linuxlite/Desktop/not_efficient.py:51) finished in 0.475 s
+21/01/12 10:55:44 INFO DAGScheduler: Job 12 finished: sum at /home/linuxlite/Desktop/not_efficient.py:51, took 0.494510 s
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 188
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 285
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 201
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 143
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 75
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 257
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 275
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 306
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 12
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 20
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 239
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 145
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 166
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 81
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 89
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 174
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 290
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 43
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 146
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 192
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 187
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 175
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 219
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 233
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 176
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 132
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 287
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 122
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 202
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 78
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 226
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 32
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 266
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 19
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 254
+21/01/12 10:55:44 INFO SparkContext: Starting job: count at /home/linuxlite/Desktop/not_efficient.py:51
+21/01/12 10:55:44 INFO DAGScheduler: Got job 13 (count at /home/linuxlite/Desktop/not_efficient.py:51) with 1 output partitions
+21/01/12 10:55:44 INFO DAGScheduler: Final stage: ResultStage 13 (count at /home/linuxlite/Desktop/not_efficient.py:51)
+21/01/12 10:55:44 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:44 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:44 INFO DAGScheduler: Submitting ResultStage 13 (PythonRDD[28] at count at /home/linuxlite/Desktop/not_efficient.py:51), which has no missing parents
+21/01/12 10:55:44 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 19.9 KB, free 361.9 MB)
+21/01/12 10:55:44 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 9.9 KB, free 361.9 MB)
+21/01/12 10:55:44 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:44 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 13 (PythonRDD[28] at count at /home/linuxlite/Desktop/not_efficient.py:51) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:44 INFO TaskSchedulerImpl: Adding task set 13.0 with 1 tasks
+21/01/12 10:55:44 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:44 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 13, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:44 INFO Executor: Running task 0.0 in stage 13.0 (TID 13)
+21/01/12 10:55:44 INFO BlockManager: Found block rdd_25_0 locally
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 83
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 110
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 322
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 139
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 56
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 46
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 186
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 27
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 314
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 9
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 113
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 195
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 173
+21/01/12 10:55:44 INFO PythonRunner: Times: total = 44, boot = -154, init = 170, finish = 28
+21/01/12 10:55:44 INFO Executor: Finished task 0.0 in stage 13.0 (TID 13). 1548 bytes result sent to driver
+21/01/12 10:55:44 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:44 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 13) in 81 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:44 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+21/01/12 10:55:44 INFO DAGScheduler: ResultStage 13 (count at /home/linuxlite/Desktop/not_efficient.py:51) finished in 0.116 s
+21/01/12 10:55:44 INFO DAGScheduler: Job 13 finished: count at /home/linuxlite/Desktop/not_efficient.py:51, took 0.149693 s
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 87
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 309
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 7
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 17
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 236
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 182
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 237
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 212
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 230
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 136
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 118
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 228
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 151
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 51
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 99
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 148
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 245
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 180
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 280
+21/01/12 10:55:44 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:44 INFO SparkContext: Starting job: sum at /home/linuxlite/Desktop/not_efficient.py:52
+21/01/12 10:55:44 INFO DAGScheduler: Got job 14 (sum at /home/linuxlite/Desktop/not_efficient.py:52) with 1 output partitions
+21/01/12 10:55:44 INFO DAGScheduler: Final stage: ResultStage 14 (sum at /home/linuxlite/Desktop/not_efficient.py:52)
+21/01/12 10:55:44 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:44 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:44 INFO DAGScheduler: Submitting ResultStage 14 (PythonRDD[29] at sum at /home/linuxlite/Desktop/not_efficient.py:52), which has no missing parents
+21/01/12 10:55:44 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 20.0 KB, free 361.9 MB)
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 60
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 36
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 101
+21/01/12 10:55:44 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 9.9 KB, free 361.9 MB)
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 58
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 235
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 82
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 295
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 325
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 105
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 71
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 197
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 253
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 103
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 133
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 140
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 193
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 289
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 96
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 209
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 5
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 72
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 227
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 6
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 28
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 319
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 14
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 141
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 124
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 302
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 323
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 30
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 76
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 2
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 70
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 167
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 15
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 77
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 272
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 31
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 311
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 13
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 179
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 54
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 274
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 244
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 85
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 106
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 221
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 155
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 250
+21/01/12 10:55:44 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 168
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 149
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 33
+21/01/12 10:55:44 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 298
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 225
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 134
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 282
+21/01/12 10:55:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 14 (PythonRDD[29] at sum at /home/linuxlite/Desktop/not_efficient.py:52) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:44 INFO TaskSchedulerImpl: Adding task set 14.0 with 1 tasks
+21/01/12 10:55:44 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 14, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:44 INFO Executor: Running task 0.0 in stage 14.0 (TID 14)
+21/01/12 10:55:44 INFO BlockManager: Found block rdd_24_0 locally
+21/01/12 10:55:44 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 62
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 317
+21/01/12 10:55:44 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:44 INFO PythonRunner: Times: total = 75, boot = -123, init = 146, finish = 52
+21/01/12 10:55:44 INFO MemoryStore: Block rdd_26_0 stored as values in memory (estimated size 93.6 KB, free 361.9 MB)
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 279
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 79
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 73
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 181
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 116
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 234
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 153
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 256
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 300
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 61
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 242
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 281
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 170
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 178
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 97
+21/01/12 10:55:44 INFO BlockManagerInfo: Added rdd_26_0 in memory on 192.168.43.9:33803 (size: 93.6 KB, free: 362.3 MB)
+21/01/12 10:55:44 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.3 MB)
+21/01/12 10:55:44 INFO PythonRunner: Times: total = 22, boot = -1, init = 12, finish = 11
+21/01/12 10:55:44 INFO Executor: Finished task 0.0 in stage 14.0 (TID 14). 1507 bytes result sent to driver
+21/01/12 10:55:44 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 14) in 162 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:44 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+21/01/12 10:55:44 INFO DAGScheduler: ResultStage 14 (sum at /home/linuxlite/Desktop/not_efficient.py:52) finished in 0.200 s
+21/01/12 10:55:44 INFO DAGScheduler: Job 14 finished: sum at /home/linuxlite/Desktop/not_efficient.py:52, took 0.211459 s
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 308
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 208
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 130
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 249
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 3
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 288
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 144
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 216
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 218
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 121
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 207
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 240
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 310
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 42
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 53
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 65
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 283
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 48
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 190
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 38
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 313
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 8
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 286
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 301
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 86
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 248
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 156
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 194
+21/01/12 10:55:44 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.3 MB)
+21/01/12 10:55:44 INFO SparkContext: Starting job: count at /home/linuxlite/Desktop/not_efficient.py:52
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 324
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 304
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 321
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 307
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 90
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 224
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 29
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 123
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 26
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 39
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 247
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 114
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 112
+21/01/12 10:55:44 INFO ContextCleaner: Cleaned accumulator 152
+21/01/12 10:55:44 INFO DAGScheduler: Got job 15 (count at /home/linuxlite/Desktop/not_efficient.py:52) with 1 output partitions
+21/01/12 10:55:44 INFO DAGScheduler: Final stage: ResultStage 15 (count at /home/linuxlite/Desktop/not_efficient.py:52)
+21/01/12 10:55:44 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:44 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:44 INFO DAGScheduler: Submitting ResultStage 15 (PythonRDD[30] at count at /home/linuxlite/Desktop/not_efficient.py:52), which has no missing parents
+21/01/12 10:55:44 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 19.9 KB, free 361.9 MB)
+21/01/12 10:55:44 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 9.9 KB, free 361.9 MB)
+21/01/12 10:55:44 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.3 MB)
+21/01/12 10:55:44 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 362.3 MB)
+21/01/12 10:55:44 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 15 (PythonRDD[30] at count at /home/linuxlite/Desktop/not_efficient.py:52) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:44 INFO TaskSchedulerImpl: Adding task set 15.0 with 1 tasks
+21/01/12 10:55:44 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 15, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:44 INFO Executor: Running task 0.0 in stage 15.0 (TID 15)
+21/01/12 10:55:45 INFO BlockManager: Found block rdd_26_0 locally
+21/01/12 10:55:45 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.3 MB)
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 231
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 50
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 47
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 229
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 265
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 263
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 267
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 258
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 293
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 92
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 127
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 215
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 44
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 119
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 107
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 22
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 217
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 21
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 88
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 115
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 270
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 214
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 262
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 205
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 222
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 292
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 69
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 108
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 129
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 246
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 264
+21/01/12 10:55:45 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.3 MB)
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 59
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 269
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 100
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 210
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 164
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 299
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 23
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 320
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 45
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 189
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 276
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 95
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 177
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 98
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 147
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 297
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 241
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 183
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 252
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 243
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 184
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 49
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 198
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 57
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 296
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 40
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 55
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 142
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 4
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 11
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 63
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 261
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 109
+21/01/12 10:55:45 INFO PythonRunner: Times: total = 65, boot = -99, init = 118, finish = 46
+21/01/12 10:55:45 INFO Executor: Finished task 0.0 in stage 15.0 (TID 15). 1505 bytes result sent to driver
+21/01/12 10:55:45 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 15) in 114 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:45 INFO DAGScheduler: ResultStage 15 (count at /home/linuxlite/Desktop/not_efficient.py:52) finished in 0.136 s
+21/01/12 10:55:45 INFO DAGScheduler: Job 15 finished: count at /home/linuxlite/Desktop/not_efficient.py:52, took 0.145353 s
+21/01/12 10:55:45 INFO TaskSchedulerImpl: Removed TaskSet 15.0, whose tasks have all completed, from pool 
+21/01/12 10:55:45 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.4 MB)
+View average bigger than 4 of Music 11610.393931731986
+View average less than 4 of Music 3388.038138825324
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 161
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 199
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 318
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 16
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 305
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 135
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 80
+21/01/12 10:55:45 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 158
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 171
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 312
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 220
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 74
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 111
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 273
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 213
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 211
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 191
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 196
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 10
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 160
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 84
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 278
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 93
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 204
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 260
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 162
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 268
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 316
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 255
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 277
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 104
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 150
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 206
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 120
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 52
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 1
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 172
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 223
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 251
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 315
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 137
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 128
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 169
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 67
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 185
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 24
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 238
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 271
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 94
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 200
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 91
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 102
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 232
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 68
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 66
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 203
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 125
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 117
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 41
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 34
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 18
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 37
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 163
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 157
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 294
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 64
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 259
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 159
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 154
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 284
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 35
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 131
+21/01/12 10:55:45 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 192.168.43.9:33803 in memory (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 138
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 126
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 291
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 25
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 165
+21/01/12 10:55:45 INFO ContextCleaner: Cleaned accumulator 303
+21/01/12 10:55:45 INFO SparkContext: Starting job: sum at /home/linuxlite/Desktop/not_efficient.py:59
+21/01/12 10:55:45 INFO DAGScheduler: Got job 16 (sum at /home/linuxlite/Desktop/not_efficient.py:59) with 1 output partitions
+21/01/12 10:55:45 INFO DAGScheduler: Final stage: ResultStage 16 (sum at /home/linuxlite/Desktop/not_efficient.py:59)
+21/01/12 10:55:45 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:45 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:45 INFO DAGScheduler: Submitting ResultStage 16 (PythonRDD[34] at sum at /home/linuxlite/Desktop/not_efficient.py:59), which has no missing parents
+21/01/12 10:55:45 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 20.0 KB, free 362.1 MB)
+21/01/12 10:55:45 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 9.9 KB, free 362.1 MB)
+21/01/12 10:55:45 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 362.4 MB)
+21/01/12 10:55:45 INFO SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:45 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 16 (PythonRDD[34] at sum at /home/linuxlite/Desktop/not_efficient.py:59) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:45 INFO TaskSchedulerImpl: Adding task set 16.0 with 1 tasks
+21/01/12 10:55:45 INFO TaskSetManager: Starting task 0.0 in stage 16.0 (TID 16, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:45 INFO Executor: Running task 0.0 in stage 16.0 (TID 16)
+21/01/12 10:55:45 INFO BlockManager: Found block rdd_2_0 locally
+21/01/12 10:55:45 INFO PythonRunner: Times: total = 218, boot = -187, init = 194, finish = 211
+21/01/12 10:55:45 INFO MemoryStore: Block rdd_31_0 stored as values in memory (estimated size 319.4 KB, free 361.7 MB)
+21/01/12 10:55:45 INFO BlockManagerInfo: Added rdd_31_0 in memory on 192.168.43.9:33803 (size: 319.4 KB, free: 362.1 MB)
+21/01/12 10:55:45 INFO PythonRunner: Times: total = 63, boot = -27, init = 32, finish = 58
+21/01/12 10:55:45 INFO MemoryStore: Block rdd_32_0 stored as values in memory (estimated size 222.1 KB, free 361.5 MB)
+21/01/12 10:55:45 INFO BlockManagerInfo: Added rdd_32_0 in memory on 192.168.43.9:33803 (size: 222.1 KB, free: 361.8 MB)
+21/01/12 10:55:45 INFO PythonRunner: Times: total = 19, boot = -28, init = 30, finish = 17
+21/01/12 10:55:45 INFO Executor: Finished task 0.0 in stage 16.0 (TID 16). 1507 bytes result sent to driver
+21/01/12 10:55:45 INFO TaskSetManager: Finished task 0.0 in stage 16.0 (TID 16) in 441 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:45 INFO TaskSchedulerImpl: Removed TaskSet 16.0, whose tasks have all completed, from pool 
+21/01/12 10:55:45 INFO DAGScheduler: ResultStage 16 (sum at /home/linuxlite/Desktop/not_efficient.py:59) finished in 0.459 s
+21/01/12 10:55:45 INFO DAGScheduler: Job 16 finished: sum at /home/linuxlite/Desktop/not_efficient.py:59, took 0.468540 s
+21/01/12 10:55:45 INFO SparkContext: Starting job: count at /home/linuxlite/Desktop/not_efficient.py:59
+21/01/12 10:55:45 INFO DAGScheduler: Got job 17 (count at /home/linuxlite/Desktop/not_efficient.py:59) with 1 output partitions
+21/01/12 10:55:45 INFO DAGScheduler: Final stage: ResultStage 17 (count at /home/linuxlite/Desktop/not_efficient.py:59)
+21/01/12 10:55:45 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:45 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:45 INFO DAGScheduler: Submitting ResultStage 17 (PythonRDD[35] at count at /home/linuxlite/Desktop/not_efficient.py:59), which has no missing parents
+21/01/12 10:55:45 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 19.9 KB, free 361.5 MB)
+21/01/12 10:55:45 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 9.9 KB, free 361.5 MB)
+21/01/12 10:55:45 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 361.8 MB)
+21/01/12 10:55:45 INFO SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:45 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 17 (PythonRDD[35] at count at /home/linuxlite/Desktop/not_efficient.py:59) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:45 INFO TaskSchedulerImpl: Adding task set 17.0 with 1 tasks
+21/01/12 10:55:45 INFO TaskSetManager: Starting task 0.0 in stage 17.0 (TID 17, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:45 INFO Executor: Running task 0.0 in stage 17.0 (TID 17)
+21/01/12 10:55:45 INFO BlockManager: Found block rdd_32_0 locally
+21/01/12 10:55:45 INFO PythonRunner: Times: total = 20, boot = -86, init = 91, finish = 15
+21/01/12 10:55:45 INFO Executor: Finished task 0.0 in stage 17.0 (TID 17). 1505 bytes result sent to driver
+21/01/12 10:55:45 INFO TaskSetManager: Finished task 0.0 in stage 17.0 (TID 17) in 42 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:45 INFO TaskSchedulerImpl: Removed TaskSet 17.0, whose tasks have all completed, from pool 
+21/01/12 10:55:45 INFO DAGScheduler: ResultStage 17 (count at /home/linuxlite/Desktop/not_efficient.py:59) finished in 0.059 s
+21/01/12 10:55:45 INFO DAGScheduler: Job 17 finished: count at /home/linuxlite/Desktop/not_efficient.py:59, took 0.068877 s
+21/01/12 10:55:45 INFO SparkContext: Starting job: sum at /home/linuxlite/Desktop/not_efficient.py:60
+21/01/12 10:55:45 INFO DAGScheduler: Got job 18 (sum at /home/linuxlite/Desktop/not_efficient.py:60) with 1 output partitions
+21/01/12 10:55:45 INFO DAGScheduler: Final stage: ResultStage 18 (sum at /home/linuxlite/Desktop/not_efficient.py:60)
+21/01/12 10:55:45 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:45 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:45 INFO DAGScheduler: Submitting ResultStage 18 (PythonRDD[36] at sum at /home/linuxlite/Desktop/not_efficient.py:60), which has no missing parents
+21/01/12 10:55:45 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 20.0 KB, free 361.5 MB)
+21/01/12 10:55:45 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 9.9 KB, free 361.5 MB)
+21/01/12 10:55:45 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 361.8 MB)
+21/01/12 10:55:45 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:45 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 18 (PythonRDD[36] at sum at /home/linuxlite/Desktop/not_efficient.py:60) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:45 INFO TaskSchedulerImpl: Adding task set 18.0 with 1 tasks
+21/01/12 10:55:45 INFO TaskSetManager: Starting task 0.0 in stage 18.0 (TID 18, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:45 INFO Executor: Running task 0.0 in stage 18.0 (TID 18)
+21/01/12 10:55:45 INFO BlockManager: Found block rdd_31_0 locally
+21/01/12 10:55:46 INFO PythonRunner: Times: total = 49, boot = -90, init = 94, finish = 45
+21/01/12 10:55:46 INFO MemoryStore: Block rdd_33_0 stored as values in memory (estimated size 95.9 KB, free 361.4 MB)
+21/01/12 10:55:46 INFO BlockManagerInfo: Added rdd_33_0 in memory on 192.168.43.9:33803 (size: 95.9 KB, free: 361.7 MB)
+21/01/12 10:55:46 INFO PythonRunner: Times: total = 40, boot = 31, init = 1, finish = 8
+21/01/12 10:55:46 INFO Executor: Finished task 0.0 in stage 18.0 (TID 18). 1507 bytes result sent to driver
+21/01/12 10:55:46 INFO TaskSetManager: Finished task 0.0 in stage 18.0 (TID 18) in 118 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:46 INFO TaskSchedulerImpl: Removed TaskSet 18.0, whose tasks have all completed, from pool 
+21/01/12 10:55:46 INFO DAGScheduler: ResultStage 18 (sum at /home/linuxlite/Desktop/not_efficient.py:60) finished in 0.147 s
+21/01/12 10:55:46 INFO DAGScheduler: Job 18 finished: sum at /home/linuxlite/Desktop/not_efficient.py:60, took 0.155110 s
+21/01/12 10:55:46 INFO SparkContext: Starting job: count at /home/linuxlite/Desktop/not_efficient.py:60
+21/01/12 10:55:46 INFO DAGScheduler: Got job 19 (count at /home/linuxlite/Desktop/not_efficient.py:60) with 1 output partitions
+21/01/12 10:55:46 INFO DAGScheduler: Final stage: ResultStage 19 (count at /home/linuxlite/Desktop/not_efficient.py:60)
+21/01/12 10:55:46 INFO DAGScheduler: Parents of final stage: List()
+21/01/12 10:55:46 INFO DAGScheduler: Missing parents: List()
+21/01/12 10:55:46 INFO DAGScheduler: Submitting ResultStage 19 (PythonRDD[37] at count at /home/linuxlite/Desktop/not_efficient.py:60), which has no missing parents
+21/01/12 10:55:46 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 19.9 KB, free 361.4 MB)
+21/01/12 10:55:46 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 9.9 KB, free 361.3 MB)
+21/01/12 10:55:46 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 192.168.43.9:33803 (size: 9.9 KB, free: 361.7 MB)
+21/01/12 10:55:46 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1184
+21/01/12 10:55:46 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 19 (PythonRDD[37] at count at /home/linuxlite/Desktop/not_efficient.py:60) (first 15 tasks are for partitions Vector(0))
+21/01/12 10:55:46 INFO TaskSchedulerImpl: Adding task set 19.0 with 1 tasks
+21/01/12 10:55:46 INFO TaskSetManager: Starting task 0.0 in stage 19.0 (TID 19, localhost, executor driver, partition 0, PROCESS_LOCAL, 7900 bytes)
+21/01/12 10:55:46 INFO Executor: Running task 0.0 in stage 19.0 (TID 19)
+21/01/12 10:55:46 INFO BlockManager: Found block rdd_33_0 locally
+21/01/12 10:55:46 INFO PythonRunner: Times: total = 59, boot = -75, init = 88, finish = 46
+21/01/12 10:55:46 INFO Executor: Finished task 0.0 in stage 19.0 (TID 19). 1505 bytes result sent to driver
+21/01/12 10:55:46 INFO TaskSetManager: Finished task 0.0 in stage 19.0 (TID 19) in 87 ms on localhost (executor driver) (1/1)
+21/01/12 10:55:46 INFO TaskSchedulerImpl: Removed TaskSet 19.0, whose tasks have all completed, from pool 
+21/01/12 10:55:46 INFO DAGScheduler: ResultStage 19 (count at /home/linuxlite/Desktop/not_efficient.py:60) finished in 0.110 s
+21/01/12 10:55:46 INFO DAGScheduler: Job 19 finished: count at /home/linuxlite/Desktop/not_efficient.py:60, took 0.122558 s
+View average bigger than 4 of Entertainment 9596.167554963358
+View average less than 4 of Entertainment 4846.1650264950795
+21/01/12 10:55:46 INFO SparkContext: Invoking stop() from shutdown hook
+21/01/12 10:55:46 INFO SparkUI: Stopped Spark web UI at http://192.168.43.9:4040
+21/01/12 10:55:46 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/01/12 10:55:46 INFO MemoryStore: MemoryStore cleared
+21/01/12 10:55:46 INFO BlockManager: BlockManager stopped
+21/01/12 10:55:46 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/01/12 10:55:46 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/01/12 10:55:46 INFO SparkContext: Successfully stopped SparkContext
+21/01/12 10:55:46 INFO ShutdownHookManager: Shutdown hook called
+21/01/12 10:55:46 INFO ShutdownHookManager: Deleting directory /tmp/spark-840f1559-42ac-4f3f-8dca-87a157b3f188
+21/01/12 10:55:46 INFO ShutdownHookManager: Deleting directory /tmp/spark-5baad5b1-3622-44dc-8f42-ff87b5cf27df
+21/01/12 10:55:46 INFO ShutdownHookManager: Deleting directory /tmp/spark-840f1559-42ac-4f3f-8dca-87a157b3f188/pyspark-0cd75a76-c22d-41e3-a48d-427fc349a8c2
